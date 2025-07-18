@@ -1,0 +1,21 @@
+[submodule "backend"]
+	path = backend
+	url = https://github.com/t-bank-sirius/backend
+[submodule "LTM"]
+	path = LTM
+	url = https://github.com/t-bank-sirius/LTM
+[submodule "vlm"]
+	path = vlm
+	url = https://github.com/t-bank-sirius/vlm
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/t-bank-sirius/frontend
+[submodule "LLM_backend"]
+	path = LLM_backend
+	url = https://github.com/t-bank-sirius/LLM_backend
+[submodule "tbank_imagegen"]
+	path = tbank_imagegen
+	url = https://github.com/t-bank-sirius/tbank_imagegen
+[submodule "tg-bot"]
+	path = tg-bot
+	url = https://github.com/t-bank-sirius/tg-bot
