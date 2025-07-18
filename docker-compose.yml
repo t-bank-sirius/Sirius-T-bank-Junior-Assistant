@@ -55,7 +55,6 @@ services:
     environment:
       - VLLM_API_URL=http://llm-model:8000
       - VLLM_TIMEOUT=120
-      - PATH="/home/$USERNAME/.local/bin:$PATH"
       - PYTHONUNBUFFERED=1
     depends_on:
       - llm-model
@@ -81,7 +80,6 @@ services:
     ports:
       - "8006:8006"
     environment:
-      - PATH="/home/$USERNAME/.local/bin:$PATH"
       - PYTHONUNBUFFERED=1
       - QDRANT_HOST=qdrant
       - QDRANT_PORT=6333
@@ -103,7 +101,9 @@ services:
 
 
   image-gen:
-    build: ./tbank_imagegen
+    build:
+      context: .
+      dockerfile: tbank_imagegen/Dockerfile
     restart: unless-stopped
 
   vlm:
